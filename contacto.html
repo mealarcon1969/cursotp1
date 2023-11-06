@@ -39,8 +39,29 @@
                 <option value="Premiun">Premiun</option>
 
             </select>
+            <input type="button" onclick="mostrar();" value="mostrar"/>
+                
+            <script>
+                function mostrar()
+                {
+                    var tiposeguro = document.getElementById("tiposeguro").value;
+                    if (tiposeguro.value ==0);
+                    {
+                        alert("Valor del Seguro 500");
+                    }
+                    if (tiposeguro.value ==1);
+                    {
+                        alert("Valor del Seguro 1000");
+                    }
+                    if (tiposeguro.value ==2);
+                    {
+                        alert("Valor del Seguro 1500");
+                    }
+                }    
 
-            
+
+
+            </script>
 
 
         </form>
