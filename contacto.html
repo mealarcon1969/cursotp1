@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Noa Seguros</title>
+    <script>
+        function mostrar()
+        {
+            var tiposeguro = document.getElementById("tiposeguro");
+
+            if (tiposeguro.value =="Basico")
+            {
+                alert("Valor del Seguro 500");
+                console.log(tiposeguro.value);
+            } else 
+                {
+                    if (tiposeguro.value =="Intermedio")
+                    {
+                        alert("Valor del Seguro 1000");
+                        console.log(tiposeguro.value);
+                    } else {
+                        if (tiposeguro.value =="Premiun");
+                        {
+                            alert("Valor del Seguro 1500");
+                            console.log(tiposeguro.value);
+                            
+                        }
+                    }
+                }
+
+        }  
+
+
+
+    </script>
+
+
 </head>
 <body>
     <header>
@@ -39,29 +71,8 @@
                 <option value="Premiun">Premiun</option>
 
             </select>
-            <input type="button" onclick="mostrar();" value="mostrar"/>
+            <input type="button" onclick="mostrar();" value="mostrar">
                 
-            <script>
-                function mostrar()
-                {
-                    var tiposeguro = document.getElementById("tiposeguro").value;
-                    if (tiposeguro.value ==0);
-                    {
-                        alert("Valor del Seguro 500");
-                    }
-                    if (tiposeguro.value ==1);
-                    {
-                        alert("Valor del Seguro 1000");
-                    }
-                    if (tiposeguro.value ==2);
-                    {
-                        alert("Valor del Seguro 1500");
-                    }
-                }    
-
-
-
-            </script>
 
 
         </form>

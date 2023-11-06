@@ -1,0 +1,98 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Noa Seguros</title>
+    <script>
+        function mostrar()
+        {
+            var tiposeguro = document.getElementById("tiposeguro");
+
+            if (tiposeguro.value =="Basico")
+            {
+                alert("Valor del Seguro 500");
+                console.log(tiposeguro.value);
+            } else 
+                {
+                    if (tiposeguro.value =="Intermedio")
+                    {
+                        alert("Valor del Seguro 1000");
+                        console.log(tiposeguro.value);
+                    } else {
+                        if (tiposeguro.value =="Premiun");
+                        {
+                            alert("Valor del Seguro 1500");
+                            console.log(tiposeguro.value);
+                            
+                        }
+                    }
+                }
+        }  
+
+
+
+    </script>
+</head>
+<body>
+  <header>
+    <img src="logo2.png" alt="Noa Seguros" width="175">
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+        
+    </nav>
+</header>
+<h2>Contacto</h2>
+<h3>Completa tus datos de contacto</h3>
+<form class="ejemplo_clase">
+    <div>
+        <label>Nombre</label>
+        <input name="nombre" id="nombre" />
+    </div>
+    <div>
+            <label>Apellido</label>
+            <input name="apellido" id="apellido" />
+    </div>
+    <div>
+        <label>DNI</label>
+        <input name="DNI" id="DNI" />
+    </div>
+    <div>
+        <label>Email</label>
+        <input name="email" id="email" />
+    </div>
+    <div>
+        <label>Telefono</label>
+        <input name="Telefono" id="Telefono" />
+    </div>
+    <div>
+        <label>Tipo de seguro</label>
+        <select name="tiposeguro" id="tiposeguro">
+            <option value="Basico">Basico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Premiun">Premiun</option>
+
+        </select>
+        <input type="button" onclick="mostrar();" value="mostrar">
+    </div>
+    <br>
+    <br>
+        <button id="enviar" type="submit">Enviar</button>
+</form>
+
+     <h2>Nuestros teléfonos de contacto</h2>
+    <div class="container footer-container">
+        <h4>Suscribete</h4>
+        <footer class="text-white row align-items-baseline">
+            <form title="Reciba novedades periódicamente">
+              <input type="email" class="form-control" aria-label="email" placeholder="Ingrese email...">
+              <input type="submit" class="btn btn-outline-light" value="suscribirme">
+            </form>
+            </footer>
+        
+</body>
+</html>
